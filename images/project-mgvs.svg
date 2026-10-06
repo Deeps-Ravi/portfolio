@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329" />
+      <stop offset="50%" stop-color="#111d3d" />
+      <stop offset="100%" stop-color="#090d1a" />
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff" />
+      <stop offset="100%" stop-color="#7000ff" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e294b" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="450" fill="url(#bgGrad)" />
+  
+  <!-- Subtle Grid Lines -->
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <line x1="0" y1="50" x2="800" y2="50" />
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="150" x2="800" y2="150" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="250" x2="800" y2="250" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="350" x2="800" y2="350" />
+    <line x1="0" y1="400" x2="800" y2="400" />
+    <line x1="100" y1="0" x2="100" y2="450" />
+    <line x1="200" y1="0" x2="200" y2="450" />
+    <line x1="300" y1="0" x2="300" y2="450" />
+    <line x1="400" y1="0" x2="400" y2="450" />
+    <line x1="500" y1="0" x2="500" y2="450" />
+    <line x1="600" y1="0" x2="600" y2="450" />
+    <line x1="700" y1="0" x2="700" y2="450" />
+  </g>
+
+  <!-- Ambient Glow Circles -->
+  <circle cx="200" cy="150" r="120" fill="#00f0ff" opacity="0.12" filter="url(#glow)" />
+  <circle cx="650" cy="300" r="140" fill="#7000ff" opacity="0.15" filter="url(#glow)" />
+
+  <!-- Browser / Dashboard Mockup Window -->
+  <g transform="translate(60, 40)">
+    <!-- Window Outer Shell -->
+    <rect width="680" height="370" rx="14" fill="#0c1222" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" />
+    
+    <!-- Top Bar -->
+    <rect width="680" height="42" rx="14" fill="#141c30" />
+    <rect y="30" width="680" height="12" fill="#141c30" />
+    <line x1="0" y1="42" x2="680" y2="42" stroke="rgba(255,255,255,0.08)" />
+
+    <!-- Window Buttons -->
+    <circle cx="24" cy="21" r="5.5" fill="#ef4444" />
+    <circle cx="42" cy="21" r="5.5" fill="#f59e0b" />
+    <circle cx="60" cy="21" r="5.5" fill="#10b981" />
+
+    <!-- URL Bar -->
+    <rect x="120" y="9" width="440" height="24" rx="6" fill="#090d18" stroke="rgba(255,255,255,0.06)" />
+    <path d="M 135 17 L 138 24 L 132 24 Z" fill="#00f0ff" />
+    <text x="148" y="25" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500">https://mgvs-realestate.web.app</text>
+    <rect x="525" y="14" width="22" height="14" rx="3" fill="#1e293b" />
+    <text x="530" y="24" fill="#00f0ff" font-family="sans-serif" font-size="9" font-weight="bold">SSL</text>
+
+    <!-- App Header Inside Window -->
+    <g transform="translate(25, 60)">
+      <!-- Logo -->
+      <rect width="28" height="28" rx="6" fill="url(#primaryGrad)" />
+      <text x="7" y="19" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="bold">M</text>
+      <text x="36" y="19" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">MGVS <tspan fill="#00f0ff" font-weight="normal">Real Estate</tspan></text>
+      
+      <!-- Nav Links -->
+      <text x="360" y="18" fill="#e2e8f0" font-family="sans-serif" font-size="11" font-weight="500">Properties</text>
+      <text x="430" y="18" fill="#94a3b8" font-family="sans-serif" font-size="11">Featured</text>
+      <text x="490" y="18" fill="#94a3b8" font-family="sans-serif" font-size="11">About</text>
+      <rect x="545" y="4" width="85" height="24" rx="12" fill="url(#primaryGrad)" />
+      <text x="563" y="19" fill="#ffffff" font-family="sans-serif" font-size="10" font-weight="bold">Contact Us</text>
+    </g>
+
+    <!-- Hero Banner within App -->
+    <g transform="translate(25, 105)">
+      <rect width="630" height="95" rx="10" fill="url(#cardGrad)" stroke="rgba(56, 189, 248, 0.2)" stroke-width="1" />
+      <text x="25" y="36" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="bold">Find Your Dream Property with MGVS</text>
+      <text x="25" y="58" fill="#94a3b8" font-family="sans-serif" font-size="11">Explore premium commercial &amp; residential listings with verified insights.</text>
+      
+      <!-- Search Filter Bar Inside Mockup -->
+      <rect x="25" y="68" width="360" height="20" rx="4" fill="#090e1a" stroke="rgba(255,255,255,0.1)" />
+      <text x="35" y="82" fill="#64748b" font-family="sans-serif" font-size="9">🔍 Search by location, property type, price...</text>
+      <rect x="330" y="70" width="50" height="16" rx="3" fill="#00f0ff" />
+      <text x="342" y="81" fill="#090d16" font-family="sans-serif" font-size="8" font-weight="bold">Search</text>
+    </g>
+
+    <!-- Property Cards Grid -->
+    <g transform="translate(25, 215)">
+      <!-- Property Card 1 -->
+      <g>
+        <rect width="198" height="135" rx="8" fill="#141d33" stroke="rgba(255,255,255,0.06)" />
+        <rect x="8" y="8" width="182" height="65" rx="6" fill="#1e294b" />
+        <!-- House graphic representation -->
+        <path d="M 99 22 L 60 52 L 138 52 Z" fill="#38bdf8" opacity="0.7" />
+        <rect x="75" y="50" width="48" height="20" fill="#0f172a" />
+        <rect x="88" y="57" width="22" height="13" fill="#60a5fa" />
+        <rect x="14" y="14" width="48" height="14" rx="3" fill="#10b981" />
+        <text x="20" y="24" fill="#ffffff" font-family="sans-serif" font-size="8" font-weight="bold">FOR SALE</text>
+        
+        <text x="12" y="90" fill="#f8fafc" font-family="sans-serif" font-size="11" font-weight="bold">Emerald Luxury Villa</text>
+        <text x="12" y="104" fill="#94a3b8" font-family="sans-serif" font-size="9">Chennai, Tamil Nadu</text>
+        <text x="12" y="126" fill="#00f0ff" font-family="sans-serif" font-size="12" font-weight="bold">₹ 85,00,000</text>
+        <rect x="140" y="113" width="48" height="16" rx="4" fill="rgba(56, 189, 248, 0.15)" stroke="rgba(56, 189, 248, 0.4)" stroke-width="0.8" />
+        <text x="147" y="124" fill="#38bdf8" font-family="sans-serif" font-size="8" font-weight="bold">Details</text>
+      </g>
+
+      <!-- Property Card 2 -->
+      <g transform="translate(216, 0)">
+        <rect width="198" height="135" rx="8" fill="#141d33" stroke="rgba(255,255,255,0.06)" />
+        <rect x="8" y="8" width="182" height="65" rx="6" fill="#1e294b" />
+        <!-- Modern building graphic -->
+        <rect x="80" y="24" width="38" height="46" fill="#818cf8" opacity="0.8" />
+        <rect x="85" y="28" width="7" height="6" fill="#0f172a" />
+        <rect x="96" y="28" width="7" height="6" fill="#0f172a" />
+        <rect x="107" y="28" width="7" height="6" fill="#0f172a" />
+        <rect x="85" y="38" width="7" height="6" fill="#0f172a" />
+        <rect x="96" y="38" width="7" height="6" fill="#0f172a" />
+        <rect x="107" y="38" width="7" height="6" fill="#0f172a" />
+        <rect x="14" y="14" width="56" height="14" rx="3" fill="#6366f1" />
+        <text x="20" y="24" fill="#ffffff" font-family="sans-serif" font-size="8" font-weight="bold">COMMERCIAL</text>
+
+        <text x="12" y="90" fill="#f8fafc" font-family="sans-serif" font-size="11" font-weight="bold">TechPark Office Suite</text>
+        <text x="12" y="104" fill="#94a3b8" font-family="sans-serif" font-size="9">Vellore / Anna Univ Zone</text>
+        <text x="12" y="126" fill="#00f0ff" font-family="sans-serif" font-size="12" font-weight="bold">₹ 1,20,00,000</text>
+        <rect x="140" y="113" width="48" height="16" rx="4" fill="rgba(56, 189, 248, 0.15)" stroke="rgba(56, 189, 248, 0.4)" stroke-width="0.8" />
+        <text x="147" y="124" fill="#38bdf8" font-family="sans-serif" font-size="8" font-weight="bold">Details</text>
+      </g>
+
+      <!-- Property Card 3 -->
+      <g transform="translate(432, 0)">
+        <rect width="198" height="135" rx="8" fill="#141d33" stroke="rgba(255,255,255,0.06)" />
+        <rect x="8" y="8" width="182" height="65" rx="6" fill="#1e294b" />
+        <!-- Modern apartment graphic -->
+        <rect x="70" y="20" width="58" height="50" fill="#38bdf8" opacity="0.6" />
+        <line x1="70" y1="36" x2="128" y2="36" stroke="#0f172a" stroke-width="2" />
+        <line x1="70" y1="52" x2="128" y2="52" stroke="#0f172a" stroke-width="2" />
+        <rect x="14" y="14" width="45" height="14" rx="3" fill="#0ea5e9" />
+        <text x="20" y="24" fill="#ffffff" font-family="sans-serif" font-size="8" font-weight="bold">NEW</text>
+
+        <text x="12" y="90" fill="#f8fafc" font-family="sans-serif" font-size="11" font-weight="bold">Sunrise City Heights</text>
+        <text x="12" y="104" fill="#94a3b8" font-family="sans-serif" font-size="9">Ranipet, Tamil Nadu</text>
+        <text x="12" y="126" fill="#00f0ff" font-family="sans-serif" font-size="12" font-weight="bold">₹ 52,00,000</text>
+        <rect x="140" y="113" width="48" height="16" rx="4" fill="rgba(56, 189, 248, 0.15)" stroke="rgba(56, 189, 248, 0.4)" stroke-width="0.8" />
+        <text x="147" y="124" fill="#38bdf8" font-family="sans-serif" font-size="8" font-weight="bold">Details</text>
+      </g>
+    </g>
+  </g>
+</svg>
